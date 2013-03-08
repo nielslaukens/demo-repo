@@ -7,6 +7,11 @@ void usage() {
 int main(int argc, char *argv[]) {
 	char *hello_who = "world";
 
+	if( argc == 1 ) {
+		usage();
+		return 1;
+	}
+
 	if( argc == 2 ) {
 		hello_who = argv[1];
 	}
