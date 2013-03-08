@@ -1,7 +1,11 @@
 #include <stdio.h>
 
-int main() {
-	printf("hello world\n");
+int main(int argc, char *argv[]) {
+	if( argc == 2 ) {
+		printf("hello %s\n", argv[1]);
+	} else {
+		printf("hello world\n");
+	}
 
 	return 0; // Return OK
 }
