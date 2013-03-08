@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+static char *version = "0.0.1";
+
 int main(int argc, char *argv[]) {
 	char *hello_who = "world";
 
