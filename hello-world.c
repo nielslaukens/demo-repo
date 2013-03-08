@@ -4,6 +4,7 @@ static char *version = "0.0.1";
 
 void usage() {
 	printf("Usage: hello-world [who]\n");
+	printf("Version: %s\n", version);
 }
 
 int main(int argc, char *argv[]) {
