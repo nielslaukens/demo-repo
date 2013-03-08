@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+void usage() {
+	printf("Usage: hello-world [who]\n");
+}
+
 int main(int argc, char *argv[]) {
 	char *hello_who = "world";
 
