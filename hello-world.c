@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-static char *version = "0.0.1";
+static char *version = "1.0";
 
 void usage() {
 	printf("Usage: hello-world [who]\n");
