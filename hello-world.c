@@ -1,12 +1,13 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-	char *hello_who = "world";
-
-	if( argc == 2 ) {
-		hello_who = argv[1];
+	int i = 1;
+	while( i < argc ) {
+		printf("hello %s\n", argv[i]);
 	}
-	printf("hello %s\n", hello_who);
+	if( argc == 1 ) {
+		printf("hello world\n");
+	}
 
 	return 0; // Return OK
 }
