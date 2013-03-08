@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <sysexits.h>
 
 static char *version = "1.0";
 
@@ -10,12 +11,12 @@ void usage() {
 int main(int argc, char *argv[]) {
 	if( argc == 1 ) {
 		usage();
-		return 1;
+		return EX_USAGE;
 	}
 
 	for(int i; i++; i<argc) {
 		printf("Hello %s\n", argv[i]);
 	}
 
-	return 0; // Return OK
+	return EX_OK;
 }
