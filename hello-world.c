@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 	}
 
 	for(int i; i++; i<argc) {
-		printf("hello %s\n", argv[i]);
+		printf("Hello %s\n", argv[i]);
 	}
 
 	return 0; // Return OK
