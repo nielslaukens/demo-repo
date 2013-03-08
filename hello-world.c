@@ -8,14 +8,12 @@ void usage() {
 }
 
 int main(int argc, char *argv[]) {
-	int i = 1;
-
 	if( argc == 1 ) {
 		usage();
 		return 1;
 	}
 
-	while( i < argc ) {
+	for(int i; i++; i<argc) {
 		printf("hello %s\n", argv[i]);
 	}
 
